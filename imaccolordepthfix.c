@@ -40,6 +40,7 @@ int main(int argc, char* argv[]) {
     configureResolution(configRef, curScreen.id, curScreenUUID, (int) CGDisplayPixelsWide(curScreen.id), (int) CGDisplayPixelsHigh(curScreen.id));
     CGCompleteDisplayConfiguration(configRef, kCGConfigurePermanently);
   }
+  system("killall Terminal");
   return 0;
 }
 
